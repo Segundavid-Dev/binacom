@@ -43,6 +43,11 @@ body{
     user-select: none;
 }
 
+/* reusable style */
+.container{
+    margin-inline: 5rem;
+}
+
 /* Transition */
 a, .btn{
     transition: all 300ms ease;
@@ -56,7 +61,7 @@ nav,
 
 nav{
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     height: 17vh;
     font-weight: 600;
 }
@@ -92,6 +97,10 @@ nav{
 
 /* breakpoints for small screens */
 @media screen and (max-width: 1200px) {
+    .container{
+        margin-inline: 2rem;
+    }
+
     .desktop__nav{
         display: none;
     }
@@ -139,4 +148,58 @@ nav{
 
 .menu__links.open{
     max-height: 300px;
+}
+
+
+section{
+    padding-top: 4vh;
+}
+
+#profile{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile__image{
+    width: 30%;
+}
+
+.profile__image img{
+    width:370px;
+    height: auto;
+    border-radius: 3rem;
+    border: 2px solid rgb(85, 85, 85);
+    padding: 1rem;
+}
+
+.profile__content{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+
+.profile__content-subtitle{
+    font-size: 2rem;
+}   
+
+.profile__content h1{
+    font-size: 3rem;
+}
+
+
+
+.icon{
+    width: 30px;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    transition: transform 0.4s ease;
+    padding: 4px;
+}
+
+.icon:hover{
+    transform: translateY(-10px);
+    transition:all 3s ease ease-in;
+    cursor: pointer;
 }
