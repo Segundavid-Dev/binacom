@@ -1,6 +1,70 @@
 /* goggle font import */
 @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital@0;1&display=swap');
 
+
+/* general styling */
+*, *::after, *::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: #111;
+}
+
+a:hover{
+    color: gray;
+    text-decoration: underline;
+    text-underline-offset:1rem;
+}
+
+img{
+    height: auto;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+p{
+    color: rgb(85, 85, 85);
+}
+
 body{
     font-family: "Hanken Grotesk", sans-serif;
+    line-height: 1.5;
+    font-size: .938rem;
+}
+
+/* Transition */
+a, .btn{
+    transition: all 300ms ease;
+}
+
+/* Desktop Nav */
+nav,
+.nav__links{
+    display: flex;
+}
+
+nav{
+    align-items: center;
+    justify-content: space-around;
+    height: 17vh;
+    font-weight: 600;
+}
+
+.nav__links{
+    gap: 2rem;
+}
+
+.logo{
+    font-size: 2rem;
+    font-size: bold;
 }
