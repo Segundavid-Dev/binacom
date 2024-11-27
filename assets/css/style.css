@@ -9,7 +9,7 @@
     box-sizing: border-box;
 }
 
-ul{
+ul, li{
     list-style-type: none;
 }
 
@@ -40,6 +40,7 @@ body{
     font-family: "Hanken Grotesk", sans-serif;
     line-height: 1.5;
     font-size: .938rem;
+    user-select: none;
 }
 
 /* Transition */
@@ -67,4 +68,62 @@ nav{
 .logo{
     font-size: 2rem;
     font-size: bold;
+}
+
+/* Hamburger Menu */
+#hamburger__nav{
+    display: none;
+}
+
+
+.hamburger__menu{
+    position: relative;
+    display: inline-block;
+}
+
+.hamburger__icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* height: 24px; */
+    width: 30px;
+    cursor: pointer;
+}
+
+/* breakpoints for small screens */
+@media screen and (max-width: 1200px) {
+    .desktop__nav{
+        display: none;
+    }
+
+    .logo{
+        font-size: 1rem;
+    }
+
+    #hamburger__nav{
+        display: flex;
+    }
+
+    .hamburger__nav{
+        display: flex;
+    }
+}
+
+.hamburger__icon{
+    font-size: 2rem;
+    transition:all 0.3s ease-in;
+}
+
+.hidden{
+    display: none;
+}
+
+.menu__links{
+    position: absolute;
+    top: 100%;
+    right: 0%;
+    background-color:#fff ;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3;
 }
