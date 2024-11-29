@@ -153,6 +153,7 @@ nav{
 
 section{
     padding-top: 4vh;
+    padding-bottom: 5rem;
 }
 
 #profile{
@@ -241,4 +242,21 @@ section{
     border: 2px solid rgb(85, 85, 85);
     padding: 1rem;
     border-radius: 20px;
+}
+
+#colleagues .title{
+    text-align: center;
+    padding-bottom:2rem ;
+}
+
+.colleagues__img{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.colleagues__img img{
+    width: 220px;
+    border-radius: 1rem;
+    padding: 10px;
 }
