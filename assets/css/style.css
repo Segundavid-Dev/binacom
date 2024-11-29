@@ -260,3 +260,36 @@ section{
     border-radius: 1rem;
     padding: 10px;
 }
+
+
+#contact{
+    text-align: center;
+}
+
+#contact h1{
+    margin-bottom: 20px;
+}
+
+.contact__field{
+    width: 30%;
+    margin-inline:  auto;
+    border: 1px solid rgb(85, 85, 85);
+    padding: 1rem 0;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+.contact__email{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact__email img{
+    margin: 0;
+}
+
+#footer{
+    text-align: center;
+    padding-bottom: 1rem;
+}
