@@ -203,3 +203,42 @@ section{
     transition:all 3s ease ease-in;
     cursor: pointer;
 }
+
+
+.about__intro{
+    text-align: center;
+}
+
+.about__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about__img{
+    width: 40%;
+}
+
+.about__img img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 3rem;
+}
+
+.about__content{
+    width: 60%;
+}
+
+.about__details{
+    display: flex;
+    gap: 3rem;
+    margin-bottom: 1rem;
+}
+
+.about__experience,
+.about__education{
+    border: 2px solid rgb(85, 85, 85);
+    padding: 1rem;
+    border-radius: 20px;
+}
