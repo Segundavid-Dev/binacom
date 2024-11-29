@@ -106,7 +106,7 @@ nav{
     }
 
     .logo{
-        font-size: 1rem;
+        font-size: 2rem;
     }
 
     #hamburger__nav{
@@ -302,6 +302,11 @@ section{
 
 
 @media screen and (max-width: 900px){
+    #hamburger__nav{
+        margin-top: 2rem;
+        height: 40px;
+    }
+
     #profile{
         display: block;
     }
