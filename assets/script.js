@@ -18,7 +18,10 @@ hamburgerIcon.addEventListener("click", function(){
 menuLink.forEach( menuElements =>{
     menuElements.addEventListener("click", ()=>{
         // remove hamburger nav
-        menuLinks.classList.remove("open")
+        menuLinks.classList.toggle("open")
+
+
+
         // return close icon back to original state
         iconClose.classList.toggle("hidden")
         iconOpen.classList.toggle("hidden")

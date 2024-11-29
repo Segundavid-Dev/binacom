@@ -116,6 +116,11 @@ nav{
     .hamburger__nav{
         display: flex;
     }
+
+    .menu__links{
+        width: 200px;
+        border-radius: 0 0 0 10px;
+    }
 }
 
 .hamburger__icon{
